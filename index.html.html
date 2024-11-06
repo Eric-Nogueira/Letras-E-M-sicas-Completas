@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos e Letras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            box-sizing: border-box;
+            background: radial-gradient(#11006e, #000000, #000dc5, #000000);
+            height: 100vh;
+        }
+
+        html *, html *:before, html*:after, html *::before, html *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            align-items: center;
+            display: flex;
+        }
+
+        h1, h2, h3, h4, h5, h6, p {
+            font-weight: normal;
+            font-size: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        
+        .hero{
+            width: 100%;
+            height: 100vh;
+            background: #00000000;
+            position: relative;
+            padding-left: 5%;
+            padding-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+
+        .slider {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            transition: all 0.5s;
+            overflow: hidden;
+        }
+
+        .slider .slide {
+            display: flex;
+            width: 30%;
+            height: 75%;
+            position: relative;
+            text-align: center;
+            justify-items: center;
+            transition: 0.5s;
+            border-radius: 30pt;
+            align-self: center;
+            justify-self: center;
+            float: right;
+            align-items: baseline;
+            justify-content: center;
+            filter: saturate(0);
+            transition: 1s;
+        }
+
+        .slider .slide:nth-child(1) {
+            background: url(https://i0.wp.com/i.ytimg.com/vi/aJD5q_J4Xtw/hqdefault.jpg?ssl=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .slider .slide:nth-child(2) {
+            background: url(https://cdns-images.dzcdn.net/images/cover/df79b539946cb26be8d6c578920855fd/500x500.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .slider .slide:nth-child(3) {
+            background: url(https://i.ytimg.com/vi/cSYI804ohFo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCRtfU-ejctJPjMsEGtJe-ihEJ7UQ);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .slider .slide:hover {
+            width: 60%;
+            transition: 0.5s;
+        }
+
+        button {
+            border: 0;
+            background: #fff;
+            border-radius: 300pt;
+            width: 6vh;
+            height: 3vh;
+            font-size: 150%;
+            font-family: "Poppins", sans-serif;
+            align-self:flex-end;
+            justify-self: center;
+            cursor: pointer;
+        }
+
+        button:hover{
+            width: 9vh;
+            filter: drop-shadow(0px 0px 5px #ffc400);
+            transition: 0.5s;
+        }
+
+        .titulo {
+            font-family: "Poppins", sans-serif;
+            font-size: 88pt;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            align-self: baseline;
+            display: flex;
+            padding-top: 100%;
+        }
+
+        .slide:hover {
+            filter: saturate(150%);
+            filter: brightness(100%);
+            transition: 0.5s;
+        }
+
+         .elemento{
+            background: #ff5900;
+            height: 1909pt;
+            width: 105vh;
+            padding-left: 0%;
+            padding-top: 0%;
+            padding-bottom: 0%;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="elemento"><h2 class="titulo">Músicas e Letras<br>Completas</h2></div>
+    <header class="hero">
+        <ul class="slider">
+            <li class="slide s1"><a href="https://www.youtube.com/watch?v=EymHTV8HkiE"><button>Ouvir</button></a></li>
+            <li class="slide s2"><a href="https://www.youtube.com/watch?v=oEeYxgRzZjo"><button>Ouvir</button></a></li>
+            <li class="slide s3"><a href="https://www.youtube.com/watch?v=UdtzPVhlkpE"><button>Ouvir</button></a></li>
+        </ul>
+    </header>
+</body>
+</html>
